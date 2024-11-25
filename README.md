@@ -33,7 +33,7 @@
 
 
 <h2>5. File hapus.php</h2>
-<img src="" width="300" height="auto">
+<img src="Screenshot 2024-11-25 214637.png" width="300" height="auto">
     <p>File ini digunakan untuk menghapus data dari database. Berikut adalah langkah-langkah penggunaannya:</p>
     <ol>
         <li>Pilih data yang ingin dihapus dari daftar yang tersedia.</li>
