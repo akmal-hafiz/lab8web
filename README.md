@@ -24,6 +24,11 @@ if ($conn == false) {
 }
 ?>
 
+
+
+
+
+
 <h2>Langkah 2: Membuat Halaman Utama untuk Menampilkan Data</h2>
 <img src="" width="300" height="auto">
 <p>File ini digunakan untuk menampilkan data dari database. Berikut langkah-langkahnya:</p>
