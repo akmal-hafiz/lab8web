@@ -2,87 +2,42 @@
 <h2>Langkah 1: Membuat Koneksi ke Database</h2>
 <img src="" width="300" height="auto">
 <p>File ini digunakan untuk membuat koneksi ke database MySQL. Berikut langkah-langkahnya:</p>
-<ol>
-    <li>Buat file <code>koneksi.php</code> di direktori proyek Anda.</li>
-    <li>Tambahkan kode berikut ke dalam file <code>koneksi.php</code>:</li>
-</ol>
-
-```php
-<?php
-$host = "localhost";
-$user = "root";
-$pass = "";
-$db = "latihan1";
-
-$conn = mysqli_connect($host, $user, $pass, $db);
-
-if ($conn == false) {
-    echo "Koneksi ke server gagal.";
-    die();
-} else {
-    echo "Koneksi berhasil";
-}
-?>
-
-
-
-
 
 
 <h2>Langkah 2: Membuat Halaman Utama untuk Menampilkan Data</h2>
 <img src="" width="300" height="auto">
-<p>File ini digunakan untuk menampilkan data dari database. Berikut langkah-langkahnya:</p>
-<ol>
-    <li>Buat file <code>index.php</code> di direktori proyek Anda.</li>
-    <li>Tambahkan kode berikut ke dalam file <code>index.php</code>:</li>
-</ol>
 
-```php
-<?php
-include("koneksi.php");
-// Query untuk menampilkan data
-$sql = 'SELECT * FROM data_barang';
-$result = mysqli_query($conn, $sql);
-?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <title>Data Barang</title>
-</head>
-<body>
-<div class="container">
-    <h1>Data Barang</h1>
-    <div class="main">
-        <table>
-            <tr>
-                <th>Gambar</th>
-                <th>Nama Barang</th>
-                <th>Kategori</th>
-                <th>Harga Jual</th>
-                <th>Harga Beli</th>
-                <th>Stok</th>
-                <th>Aksi</th>
-            </tr>
-            <?php if($result): ?>
-            <?php while($row = mysqli_fetch_array($result)): ?>
-            <tr>
-                <td><img src="gambar/<?= $row['gambar'];?>" alt="<?= $row['nama'];?>"></td>
-                <td><?= $row['nama'];?></td>
-                <td><?= $row['kategori'];?></td>
-                <td><?= $row['harga_beli'];?></td>
-                <td><?= $row['harga_jual'];?></td>
-                <td><?= $row['stok'];?></td>
-                <td><?= $row['id_barang'];?></td>
-            </tr>
-            <?php endwhile; else: ?>
-            <tr>
-                <td colspan="7">Belum ada data</td>
-            </tr>
-            <?php endif; ?>
-        </table>
-    </div>
-</div>
-</body>
-</html>
+
+
+
+<h2>3. File tambah.php</h2>
+<img src="" width="300" height="auto">
+    <p>File ini digunakan untuk menambahkan data ke dalam database. Berikut adalah langkah-langkah penggunaannya:</p>
+    <ol>
+        <li>Buka form input yang disediakan di <code>tambah.php</code>.</li>
+        <li>Masukkan data yang ingin ditambahkan ke database (contohnya: nama, alamat, nomor telepon, dll).</li>
+        <li>Klik tombol "Simpan" untuk menyimpan data ke dalam database.</li>
+        <li>Jika berhasil, data akan tersimpan dan pengguna akan diarahkan kembali ke halaman utama atau halaman lain yang sudah ditentukan.</li>
+    </ol>
+
+<h2>4. File ubah.php</h2>
+<img src="" width="300" height="auto">
+    <p>File ini digunakan untuk mengubah data yang sudah ada di dalam database. Berikut adalah langkah-langkah penggunaannya:</p>
+    <ol>
+        <li>Pilih data yang ingin diubah dari daftar yang tersedia (bisa berupa list atau tabel).</li>
+        <li>Klik tombol "Ubah" pada data yang ingin diperbarui. Halaman <code>ubah.php</code> akan terbuka dengan form yang sudah terisi dengan data yang dipilih.</li>
+        <li>Lakukan perubahan pada data yang ada di form.</li>
+        <li>Klik tombol "Simpan" untuk menyimpan perubahan ke database.</li>
+        <li>Jika berhasil, data yang diubah akan disimpan, dan halaman akan menampilkan data yang sudah diperbarui.</li>
+    </ol>
+
+
+<h2>5. File hapus.php</h2>
+<img src="" width="300" height="auto">
+    <p>File ini digunakan untuk menghapus data dari database. Berikut adalah langkah-langkah penggunaannya:</p>
+    <ol>
+        <li>Pilih data yang ingin dihapus dari daftar yang tersedia.</li>
+        <li>Klik tombol "Hapus" pada data yang dipilih. Sebuah konfirmasi akan muncul untuk memastikan penghapusan data.</li>
+        <li>Setelah konfirmasi, data akan dihapus dari database.</li>
+        <li>Jika berhasil, data akan terhapus, dan halaman akan memperbarui daftar data yang tersedia tanpa data yang dihapus.</li>
+    </ol>
