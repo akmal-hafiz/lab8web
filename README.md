@@ -1,6 +1,6 @@
 # lab8web
 <h2>Langkah 1: Membuat Koneksi ke Database</h2>
-<img src="" width="300" height="auto">
+<img src="Screenshot 2024-11-25 214113.png" width="300" height="auto">
 <p>File ini digunakan untuk membuat koneksi ke database MySQL. Berikut langkah-langkahnya:</p>
 
 
