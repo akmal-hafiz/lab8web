@@ -21,7 +21,7 @@
     </ol>
 
 <h2>4. File ubah.php</h2>
-<img src="" width="300" height="auto">
+<img src="Screenshot 2024-11-25 214321.png" width="300" height="auto">
     <p>File ini digunakan untuk mengubah data yang sudah ada di dalam database. Berikut adalah langkah-langkah penggunaannya:</p>
     <ol>
         <li>Pilih data yang ingin diubah dari daftar yang tersedia (bisa berupa list atau tabel).</li>
