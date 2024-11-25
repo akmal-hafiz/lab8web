@@ -5,7 +5,7 @@
 
 
 <h2>Langkah 2: Membuat Halaman Utama untuk Menampilkan Data</h2>
-<img src="" width="300" height="auto">
+<img src="Screenshot 2024-11-25 214854.png" width="300" height="auto">
 
 
 
