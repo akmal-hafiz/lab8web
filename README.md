@@ -11,7 +11,7 @@
 
 
 <h2>3. File tambah.php</h2>
-<img src="" width="300" height="auto">
+<img src="Screenshot 2024-11-25 214232.png" width="300" height="auto">
     <p>File ini digunakan untuk menambahkan data ke dalam database. Berikut adalah langkah-langkah penggunaannya:</p>
     <ol>
         <li>Buka form input yang disediakan di <code>tambah.php</code>.</li>
